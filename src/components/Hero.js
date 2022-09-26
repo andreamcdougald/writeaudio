@@ -16,7 +16,7 @@ export default function Hero() {
           />
         </div>
 
-        <div className="mx-auto w-full max-w-7xl pt-16 pb-22 text-center lg:pb-[14rem] lg:pt-24 lg:text-left">
+        <div className="mx-auto w-full max-w-7xl pt-16 pb-22 text-center lg:pb-[16rem] lg:pt-22 lg:text-left">
           <div className="px-4 sm:px-8 lg:w-1/2 xl:pr-16">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl text-offwhite">
               <span className="block xl:inline">
