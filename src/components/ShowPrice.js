@@ -6,18 +6,16 @@ export default function ShowPrice() {
   const [price] = useContext(PriceContext);
   const [open, setOpen] = useState(false);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const priceDiv = document.getElementById("price");
 
-  function seePrice() {
-    setOpen(true);
-    //dataLayer.push({ price: { price } });
-    window.dataLayer.push({
-      price: { price },
+    priceDiv.addEventListener("click", () => {
+      setOpen(true);
+      window.dataLayer.push({
+        price: { price },
+      });
     });
-  }
-  const priceDiv = document.getElementById("price");
-
-  priceDiv.addEventListener("click", seePrice);
+  }, []);
 
   return (
     <div id="price" className="">
