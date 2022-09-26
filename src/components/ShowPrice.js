@@ -6,14 +6,18 @@ export default function ShowPrice() {
   const [price] = useContext(PriceContext);
   const [open, setOpen] = useState(false);
 
+  function addToDataLayer() {
+    window.dataLayer.push({
+      price: { price },
+    });
+  }
+  /* eslint-disable */
   useEffect(() => {
     const priceDiv = document.getElementById("price");
 
     priceDiv.addEventListener("click", () => {
       setOpen(true);
-      window.dataLayer.push({
-        price: { price },
-      });
+      addToDataLayer();
     });
   }, []);
 
