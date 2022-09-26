@@ -8,21 +8,19 @@ export default function ShowPrice() {
 
   function addToDataLayer() {
     window.dataLayer.push({
-      price: { price },
+      event: 'gtm.click',
+      price,
     });
   }
   /* eslint-disable */
   useEffect(() => {
-    const priceDiv = document.getElementById("price");
-
-    priceDiv.addEventListener("click", () => {
-      setOpen(true);
+    if (open) {
       addToDataLayer();
-    });
-  }, []);
+    }
+  }, [open]);
 
   return (
-    <div id="price" className="">
+    <div id="price" className="" onClick={() => setOpen(true)}>
       {open ? (
         <div className="">
           <div className="animate-[moveout_.2s_ease-out_forwards]">
