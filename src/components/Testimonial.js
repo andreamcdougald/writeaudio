@@ -7,11 +7,11 @@ export default function Testimonial() {
         <div className="relative">
           <blockquote className="mt-10">
             <div className="mt-4 flex mx-auto flex-row items-center text-center w-100 center justify-center">
-              <StarIcon className="text-sage h-5 w-5 " aria-hidden="true" />{" "}
-              <StarIcon className="text-sage h-5 w-5 " aria-hidden="true" />{" "}
-              <StarIcon className="text-sage h-5 w-5 " aria-hidden="true" />{" "}
-              <StarIcon className="text-sage h-5 w-5 " aria-hidden="true" />{" "}
-              <StarIcon className="text-sage h-5 w-5 " aria-hidden="true" />{" "}
+              <StarIcon className="text-cream h-5 w-5 " aria-hidden="true" />{" "}
+              <StarIcon className="text-cream h-5 w-5 " aria-hidden="true" />{" "}
+              <StarIcon className="text-cream h-5 w-5 " aria-hidden="true" />{" "}
+              <StarIcon className="text-cream h-5 w-5 " aria-hidden="true" />{" "}
+              <StarIcon className="text-cream h-5 w-5 " aria-hidden="true" />{" "}
             </div>
             <div className="mx-auto max-w-3xl text-center text-xl font-medium leading-9 text-gray-900">
               <p>

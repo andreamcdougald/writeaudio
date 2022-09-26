@@ -6,7 +6,8 @@ module.exports = {
       colors: {
         sage: "#7D9E85",
         sagedark: "#637e6a",
-        cream: "#F9F0EB",
+        cream: "#e45336",
+        offwhite: "#f1ebea",
       },
       keyframes: {
         movein: {
