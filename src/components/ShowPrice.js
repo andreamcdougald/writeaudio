@@ -7,10 +7,11 @@ export default function ShowPrice() {
   const [open, setOpen] = useState(false);
 
   function addToDataLayer() {
-    window.dataLayer.push({
-      event: 'gtm.click',
-      price,
-    });
+    if (window.gtag) {
+      window.gtag('event', 'price_click', {
+        price
+      });
+    }
   }
   /* eslint-disable */
   useEffect(() => {
