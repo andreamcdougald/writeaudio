@@ -15,11 +15,8 @@ export default function Testimonial() {
             </div>
             <div className="mx-auto max-w-3xl text-center text-xl font-medium leading-9 text-gray-900">
               <p>
-                &ldquo; I have ADHD and here's why I started to write: I write
-                to focus, to calm. I write to find myself and to lose myself. I
-                write because, as Gloria Steinem said, “Writing is the only
-                thing that, when I do it, I don’t feel I should be doing
-                something else”. &rdquo;
+                &ldquo; As a self-published author I didn't think creating an
+                audiobook was something I could do myself - until now! &rdquo;
               </p>
             </div>
             <footer className="mt-8">
@@ -37,7 +34,7 @@ export default function Testimonial() {
                   </div>
 
                   <svg
-                    className="mx-1 hidden h-5 w-5 text-indigo-600 md:block"
+                    className="mx-1 hidden h-5 w-5 text-cream md:block"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >

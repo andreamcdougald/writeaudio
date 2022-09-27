@@ -8,7 +8,7 @@ export default function ShowPrice() {
 
   function addToDataLayer() {
     window.dataLayer.push({
-      event: 'gtm.click',
+      event: "gtm.click",
       price,
     });
   }
@@ -34,7 +34,7 @@ export default function ShowPrice() {
           >
             <h2 className="min-w-max text-center absolute text-3xl font-bold tracking-tight text-offwhite sm:block sm:text-4xl lg:text-left  ">
               Subscription only{" "}
-              <span className=" text-orange-200">{price} month</span>
+              <span className=" text-orange-200">{price} / month</span>
             </h2>
           </div>
         </div>

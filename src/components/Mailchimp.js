@@ -74,7 +74,7 @@ const CustomForm = ({ status, message, onValidated }) => {
             <div className="mt-3 col-span-full	 rounded-md shadow sm:mt-0 md:col-span-2">
               <button
                 type="submit"
-                className=" w-full  justify-center rounded-md border border-transparent bg-offwhite px-5 py-3 text-base font-medium text-cream hover:bg-orange-200 focus:outline-none focus:ring-2 focus:ring-offset-2"
+                className=" w-full  justify-center rounded-md border border-transparent bg-orange-200 px-5 py-3 text-base font-medium text-cream hover:bg-orange-300 focus:outline-none focus:ring-2 focus:ring-offset-2"
               >
                 Notify me
               </button>
