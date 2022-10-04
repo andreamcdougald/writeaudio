@@ -1,30 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import PriceContext from "./PriceGenerator";
 import { useContext } from "react";
 
-export default function ShowPrice() {
+export default function ShowPrice(props) {
   const [price] = useContext(PriceContext);
-  const [open, setOpen] = useState(false);
-
-  function addToDataLayer() {
-    if (window.gtag) {
-      window.gtag("event", "price_click", {
-        price,
-      });
-    }
-  }
-  localStorage.setItem("viewedPrice", "false");
-  /* eslint-disable */
-  useEffect(() => {
-    if (open) {
-      addToDataLayer();
-      localStorage.setItem("viewedPrice", "true");
-    }
-  }, [open]);
 
   return (
-    <div id="price" className="" onClick={() => setOpen(true)}>
-      {open ? (
+    <div id="price" className="" onClick={() => props.setOpenPrice(true)}>
+      {props.openPrice ? (
         <div className="">
           <div className="animate-[moveout_.2s_ease-out_forwards]">
             <h2 className="min-w-max text-center absolute text-3xl font-bold tracking-tight text-offwhite sm:block sm:text-4xl lg:text-left">
